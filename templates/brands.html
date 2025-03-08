@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
   <link rel="stylesheet" href="../static/css/styles.css">
-  <title>Modello - Brands</title>
+  <title>Modello</title>
 
   <!-- Import Kanit Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,6 @@
   <!-- Lenis Smooth Scrolling -->
   <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
-
   <script>
     // Initialize Lenis
     const lenis = new Lenis();
@@ -30,16 +29,14 @@
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-  </script>
+  </script>  
 </head>
-
-
 <body>
-    
-  <!-- Navbar -->
-  <nav class="navbar">
+
+<!-- Navbar -->
+<nav class="navbar">
     <div class="container">
-      <a href="#" class="brand"><h1>Modello</h1></a>
+      <a href="index.html" class="brand">Modello</a>
 
       <div class="nav-content" id="navContent">
         <ul class="nav-menu">
@@ -56,35 +53,40 @@
     </div> <!-- Container End -->
   </nav> <!-- Nav End -->
 
-  <header class="hero">
-    <div class="container">
-      <h1>Connect with Fashion Startups. Discover Your Next Modeling Opportunity.</h1>
-      <p>Find people who want to learn what you know and teach what you want to learn. No money, just skills!</p>
-      <a href="brands.html" class="cta-button">Explore Brands</a>
-    </div>
-  </header>
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <input type="text" id="brandSearch" placeholder="Search for a brand..." onkeyup="filterBrands()">
+    </section>
 
-  <section class="how-it-works">
-    <div class="container">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <h3>1️⃣ Create Your Profile</h3>
-          <p>List your modeling interests and preferred styles</p>
+    <!-- Brands List -->
+    <section class="brands-list">
+        <div class="brand-card" data-name="Brand A">
+            <img src="brandA.jpg" alt="Brand A">
+            <div class="brand-info">
+                <h3>Brand A</h3>
+                <p>Description of Brand A. It does cool things.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
+                <button class="chat-btn">Chat</button>
+            </div>
         </div>
-        <div class="step">
-          <h3>2️⃣ Discover Brands</h3>
-          <p>Browse through emerging fashion startups that match your vibe</p>
+        <div class="brand-card" data-name="Brand B">
+            <img src="brandB.jpg" alt="Brand B">
+            <div class="brand-info">
+                <h3>Brand B</h3>
+                <p>Description of Brand B. It does awesome stuff.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+                <button class="chat-btn">Chat</button>
+            </div>
         </div>
-        <div class="step">
-          <h3>3️⃣ Connect & Collaborate</h3>
-          <p>Start a conversation with brands and secure your next modeling gig</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+        <!-- More brand cards here -->
+    </section>
 
-    
+    <script src="script.js"></script> <!-- Link to your JavaScript -->
 </body>
 </html>
