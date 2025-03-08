@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../src/styles.css">
+  <title>SkillSwap</title>
+
+  <!-- Import Kanit Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Import Icons -->
+  <script src="https://kit.fontawesome.com/e597f29157.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+
+  <!-- Import Swiper Library for Image Carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+</head>
+
+
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="brand">SkillSwap</a>
+
+      <div class="nav-content" id="navContent">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-meta"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+        </div> <!-- Social Icons End -->
+
+      </div> <!-- Nav Content End -->
+    </div> <!-- Container End -->
+  </nav> <!-- Nav End -->
+
+  <header class="hero">
+    <div class="container">
+      <h1>Swap Skills. Learn Together. Level Up.</h1>
+      <p>Find people who want to learn what you know and teach what you want to learn. No money, just skills!</p>
+      <a href="hobbies.html" class="cta-button">Explore Hobbies</a>
+    </div>
+  </header>
+
+    
+</body>
+</html>
