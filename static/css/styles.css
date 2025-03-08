@@ -1,0 +1,75 @@
+/* --------- Site Branding --------- */
+:root {
+
+    /* Base Font */
+    --ff: "Kanit", serif;
+    --basefontsize: 16px;
+
+    /* Site Colours */
+    --background-color: #F4F3EE;  /* Soft Off-White */
+    --text-color: #1B1B1B;  /* Deep Charcoal */
+    --primary-color: #0072B5;  /* Vibrant Blue */
+    --secondary-color: #68B0AB;  /* Muted Teal */
+    --highlight-color: #354F52;  /* Dark Forest Green */
+
+}
+
+body,
+html {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--basefontsize);
+    font-family: var(--ff);
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: 5vh; /*Gap between navbar and top of screen*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent !important; /* Fully transparent */
+    z-index: 10;
+    text-decoration: none;
+}
+
+.nav-content {
+    display: flex;
+    /* Flexbox to align nav and social icons */
+    align-items: center;
+    gap: 20px;
+    /* Space between menu and social icons */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the brand */
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+    background-color: var(--background-color);
+}
+
+.navbar .brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-content {
+    position: absolute;
+    right: 20px; /* Positions social icons to the right */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
