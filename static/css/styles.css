@@ -218,14 +218,25 @@ html {
     max-width: 50%;  /* Ensure brands fill up to half the width of the screen */
 }
 
-/* Brand Card Styling - Smaller size and aligned horizontally */
+/* Style for the brand card container */
 .brand-card {
-    background-color: white;
+    width: 200px; /* Set a fixed width for the brand card */
+    height: 200px; /* Set a fixed height for the brand card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Background color for the card */
     border-radius: 10px;
+    overflow: hidden; /* Ensures the image doesn't overflow the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;  /* Smaller width */
-    text-align: left;  /* Align text to the left inside the card */
-    padding: 15px;
+}
+
+/* Style for the brand image inside the card */
+.brand-card img {
+    object-fit: fit; /* Ensures the image covers the entire card while maintaining aspect ratio */
+    width: 60%; /* Ensures the image takes up the full width of the card */
+    height: 60%; /* Ensures the image takes up the full height of the card */
+    border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 /* Brand Info and Social Links */
