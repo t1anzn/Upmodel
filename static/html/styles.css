@@ -1,0 +1,114 @@
+/* Import Google Fonts for a high-fashion look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Background Video Styles */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  /* Optional filter to darken the video for better content contrast */
+  filter: brightness(0.7);
+}
+
+/* General Body Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #e9cfb1fc;
+  background-color: #e4d3ba00; /* Fallback color */
+}
+
+/* Quiz Container */
+.quiz-container {
+  background-color: rgb(0, 0, 0);  /* Solid dark background for readability */
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Heading */
+.quiz-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #151515;
+  padding-bottom: 10px;
+}
+
+/* Each Question Block */
+.question {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.question p {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Radio Labels */
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #fff;
+}
+
+label:hover {
+  color: #ddd;
+}
+
+/* Submit Button */
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Results Section */
+#results {
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+}
+
+/* New: Results Image Styling */
+.result-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
