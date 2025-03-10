@@ -1,2 +1,2 @@
-# SkillSwap
- Platform to connect users with different hobbies to try each other's hobbies.
+# Upmodel
+Connecting talent with opportunity—where models and designers meet to create, collaborate, and grow.
